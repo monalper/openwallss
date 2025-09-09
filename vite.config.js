@@ -1,7 +1,9 @@
-export default {
+import { defineConfig } from 'vite'
+
+export default defineConfig({
     root: 'src/',
     publicDir: '../static/',
-    base: './',
+    base: '/openwallss/',   // GitHub Pages için base path
     server:
     {
         host: true, // Open to local network and display URL
@@ -13,4 +15,4 @@ export default {
         emptyOutDir: true, // Empty the folder first
         sourcemap: true // Add sourcemap
     },
-}
+})
